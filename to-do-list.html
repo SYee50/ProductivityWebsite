@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="to-do-list.html">To Do List</a></li>
+        <li><a href="pomodoro-clock.html">Pomodoro Clock</a></li>
+    </ul>
+
+    <div id="to-do-header">
+        <!-- Header w/ Help Button -->
+        <h1 class="feature-h1">To Do List <button class="question-btn">?</button></h1>
+        
+        <!-- Add Task -->
+        <form>
+            <input type="text" id="new-task" name="add-task" placeholder="Enter New Task">
+            <button id="add-bttn">Add</button>
+        </form>
+
+        <!-- List of tasks -->
+        <div id="to-do-list">
+            <!-- Append task to div -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&#169 2023 Sandra Yee</p>
+    </footer>
+    
+    <script src="to-do-scripts.js"></script>
+</body>
+</html>

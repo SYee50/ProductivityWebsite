@@ -54,3 +54,77 @@ footer {
     width: 100%;
     border-top: 1px solid black;
 }
+
+/* To-Do List Page Styles */
+
+/* layout for page */
+#to-do-header {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Help Button */
+.question-btn {
+    border-radius: 50%;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-left: 25px;
+}
+
+/* Styling for adding a new task */
+#new-task {
+    font-size: 15px;
+    width: 250px;
+    height: 25px;
+}
+
+#add-bttn {
+    height: 32px;
+    width: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* List Styles */
+
+/* Styling for tasks in to-do list */
+form {
+    margin-bottom: 30px;
+}
+
+/* Cross-off completed task */
+.complete {
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2.5px;
+}
+
+/* Styling for delete and edit buttons in to-do list */
+.list-btn {
+    width: 60px;
+    margin-left: 15px;
+    font-size: medium;
+}
+
+/* Have each task as an in-line item */
+.task-item {
+    display: inline-block;
+    min-width: 250px;
+}
+
+/* Styling for checkbox in to-do list */
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 15px;
+}
+
+/* Style input box for editing */
+.edit-input {
+    min-width: 241px;
+    min-height: 25px;
+    font-size: 15px;
+}
