@@ -1,0 +1,56 @@
+/* index.html layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Navigation Bar */
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+}
+
+li {
+    width: 200px;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Text */
+#homepage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#description {
+    margin-top: 100px;
+}
+
+#features {
+    display: flex
+}
+
+#clock {
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid black;
+}
