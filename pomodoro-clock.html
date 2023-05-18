@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="to-do-list.html">To Do List</a></li>
+        <li><a href="pomodoro-clock.html">Pomodoro Clock</a></li>
+    </ul>
+
+    <!-- Clock -->
+    <main id="clock-container">
+        <h1 id="pomodoro-clock">Pomodoro Clock</h1>
+
+        <!-- Switches between FOCUS and BREAK -->
+        <h3 id="focus-break">FOCUS</h3>
+
+        <!-- Clock Interface -->
+        <div id="clock-interface">
+            <p id="minutes">25</p>
+            <p>:</p>
+            <p id="seconds">00</p>
+        </div>
+        
+        <!-- Buttons for Clock -->
+        <div id="clock-btn">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&#169 2023 Sandra Yee</p>
+    </footer>
+    
+    <script src="pomodoro-scripts.js"></script>
+</body>
+</html>

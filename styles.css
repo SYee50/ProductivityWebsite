@@ -128,3 +128,52 @@ input[type="checkbox"] {
     min-height: 25px;
     font-size: 15px;
 }
+
+/* Pomodoro Clock Page Styles */
+
+#clock-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#pomodoro-clock {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+#focus-break {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Clock Interface */
+#clock-interface p {
+    display: inline;
+    font-size: 100px;
+}
+
+#clock-interface {
+    border: solid;
+    width: 390px;
+    height: 120px;
+    text-align: center;
+    vertical-align: center;
+    margin: auto;
+}
+
+#clock-btn {
+    margin: 20px auto;
+}
+
+#clock-btn button {
+    width: 130px;
+    font-size: medium;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#clock-btn button:hover {
+    background-color: silver;
+}
