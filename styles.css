@@ -1,17 +1,56 @@
+:root {
+    --purple: #3b4673;
+    --lilac: #b5adc8;
+    --blackish: #10121e;
+    --light-blue: #8ca1c9;
+    --blue-purple: #4c647b;
+}
+
 /* index.html layout */
+#index-page {
+    /*
+    Photographer: Jackson Hendry
+    URL: https://unsplash.com/photos/eodA_8CTOFo
+    */
+
+    /* NEED TO GET BETTER IMAGE WITHOUT ARROWS IN UPPER RIGHT CORNER */
+    background-image: url("img/starry-night.png");
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+#index-page ul {
+    background-color: transparent;
+}
+
+#index-page h1 {
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+#index-page footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+/* other pages general layout */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: var(--purple);
+    color: whitesmoke;
 }
 
 /* Navigation Bar */
 ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    background-color: black;
+    background-color: var(--blackish);
 }
 
 li {
@@ -47,13 +86,12 @@ a {
 
 /* Footer */
 footer {
-    background-color: white;
+    background-color: var(--purple);
     position: fixed;
     text-align: center;
     left: 0;
     bottom: 0;
     width: 100%;
-    border-top: 1px solid black;
     margin-top: 50px;
 }
 
@@ -72,8 +110,8 @@ footer {
     border-radius: 50%;
     font-size: xx-large;
     font-weight: bold;
-    background-color: black;
-    color: white;
+    background-color: var(--blackish);
+    color: whitesmoke;
     margin-left: 25px;
 }
 
@@ -228,6 +266,12 @@ input[type="checkbox"] {
     padding-left: 35px;
 }
 
+button {
+    background-color: var(--lilac);    
+    color: var(--blackish);
+}
 
-
-
+/* show last item in to-do list */
+#to-do-list {
+    margin-bottom: 50px;
+}

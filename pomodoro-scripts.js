@@ -11,7 +11,7 @@ const toggleText = () => {
         header.style.color = "Red";
     } else {
         header.innerText = "FOCUS";
-        header.style.color = "Black";
+        header.style.color = "Whitesmoke";
     };
 };
 
@@ -72,10 +72,18 @@ const toggleFocusBreak = () => {
     };
 };
 
+// variable indicates if the clock has started
+// prevents speed up of countdown
+let countdownOn = false;
+
 // Start pomodoro clock
 const startClock = () => {
     // call clock function every second
-    setTimeout(clock, 10);
+    if (!countdownOn) {
+        clock();
+        countdownOn = true;
+    }
+    // setTimeout(clock, 10);
 };
 
 startBtn.addEventListener("click", startClock);
@@ -85,6 +93,7 @@ startBtn.addEventListener("click", startClock);
 const pauseClock = () => {
     // stop calls to startClock function
     clearTimeout(timer);
+    countdownOn = false;
 };
 
 pauseBtn.addEventListener("click", pauseClock);
@@ -95,10 +104,11 @@ const resetClock = () => {
     clearTimeout(timer);
     // set header to FOCUS
     header.innerText = "FOCUS";
-    header.style.color = "Black";
+    header.style.color = "Whitesmoke";
     // reset clock display
     minutes.innerText = 25;
     seconds.innerText = "0" + 0;
+    countdownOn = false;
 }
 
 resetBtn.addEventListener("click", resetClock);

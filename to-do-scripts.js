@@ -20,8 +20,13 @@ const addTask = (e) => {
     taskEle.innerHTML = htmlContent;
 
     // append new element to to-do list div
-    const toDoListDiv = document.querySelector("#to-do-list");
-    toDoListDiv.appendChild(taskEle);
+    if (taskInput === "") {
+        // let user know that they must type in an input
+        alert("You must type in an input!")
+    } else {
+        const toDoListDiv = document.querySelector("#to-do-list");
+        toDoListDiv.appendChild(taskEle);
+    }
 
     // remove text from input box
     inputEle.value = "";
@@ -60,24 +65,35 @@ const editTask = (element) => {
     newInput.setAttribute("value", `${pText}`);
     newInput.setAttribute("ondblclick", "editComplete(this)");
     newInput.setAttribute("class", "edit-input");
+    newInput.setAttribute("id", `${pText}`);
     divElement.insertBefore(newInput, firstChild.nextSibling);
     divElement.removeChild(childNodes[2]);
 };
 
 // edit complete - when use double clicks input box
 const editComplete = (element) => {
+    // save original task in case input is empty
+    let originalTask = element.getAttribute("id");
     // get parent element
     const divElement = element.parentElement;
     // get child elements
     let childNodes = divElement.children;
     // get editted task
     let newTask = element.value;
+    console.log(newTask);
 
-    // replace input with new p
+    // let user know that they must type in an input
+    // retain original task if input is empty
+    if (newTask === "") {
+        alert("You must type in a new task!")
+        newTask = originalTask;
+    };
+
+    // replace input with new p if new text is entered
     let firstChild = divElement.firstChild;
     let newP = document.createElement("p");
     newP.innerText = newTask;
     newP.setAttribute("class", "task-item");
     divElement.insertBefore(newP, firstChild.nextSibling);
-    divElement.removeChild(childNodes[2])
+    divElement.removeChild(childNodes[2]);
 };
