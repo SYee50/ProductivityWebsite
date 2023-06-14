@@ -9,11 +9,10 @@
 /* index.html layout */
 #index-page {
     /*
+    Description: Photograph with night sky above mountains
     Photographer: Jackson Hendry
     URL: https://unsplash.com/photos/eodA_8CTOFo
     */
-
-    /* NEED TO GET BETTER IMAGE WITHOUT ARROWS IN UPPER RIGHT CORNER */
     background-image: url("img/starry-night.png");
     background-repeat:no-repeat;
     background-size:100% 100vh;
@@ -189,12 +188,8 @@ input[type="checkbox"] {
 }
 
 /* Clock Interface */
-#clock-interface p {
-    display: inline;
-    font-size: 100px;
-}
-
 #clock-interface {
+    font-size: 100px;
     border: solid;
     width: 390px;
     height: 120px;
